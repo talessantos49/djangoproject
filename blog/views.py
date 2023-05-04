@@ -17,17 +17,17 @@ def template(request):
 def maq15(request):
     return render(request, "blog/maq15.html")
 
-gc = gspread.service_account(filename='\service_account.json')
-sh = gc.open_by_key('1noVM0ci_yNDi7I2egsF2-erzuTgBLa9LrOrM4q96xCk')
-worksheet = sh.worksheet("Página1")
+# gc = gspread.service_account(filename='\service_account.json')
+# sh = gc.open_by_key('1noVM0ci_yNDi7I2egsF2-erzuTgBLa9LrOrM4q96xCk')
+# worksheet = sh.worksheet("Página1")
 
-def media_data_input():
-    received_values = {}
-    received_values = worksheet.get_all_records()
-    print(received_values)
+# def media_data_input():
+#     received_values = {}
+#     received_values = worksheet.get_all_records()
+#     print(received_values)
 
-def withtemplates(request):
-    # return HttpResponse(worksheet.col_values(3)) retorna como string a coluna
-    # return HttpResponse(worksheet.row_values(1)) retorna como string a linha 
-    # return HttpResponse(worksheet.get_all_values()) retorna como lista 
-    return HttpResponse(worksheet.get_all_records())
+# def withtemplates(request):
+#     # return HttpResponse(worksheet.col_values(3)) retorna como string a coluna
+#     # return HttpResponse(worksheet.row_values(1)) retorna como string a linha 
+#     # return HttpResponse(worksheet.get_all_values()) retorna como lista 
+#     return HttpResponse(worksheet.get_all_records())
