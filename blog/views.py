@@ -17,9 +17,9 @@ def template(request):
 def maq15(request):
     return render(request, "blog/maq15.html")
 
-# gc = gspread.service_account(filename='\service_account.json')
-# sh = gc.open_by_key('1noVM0ci_yNDi7I2egsF2-erzuTgBLa9LrOrM4q96xCk')
-# worksheet = sh.worksheet("Página1")
+gc = gspread.service_account(filename='\service_account.json')
+sh = gc.open_by_key('1noVM0ci_yNDi7I2egsF2-erzuTgBLa9LrOrM4q96xCk')
+worksheet = sh.worksheet("Página1")
 
 # def media_data_input():
 #     received_values = {}
