@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.template),
     path('retificalonga/maq235', views.maq235),
     path('retificalonga/template', views.template),
-    path('retificaorbital/maq15', views.maq15)
+    path('retificaorbital/maq15', views.maq15),
+    path('home', views.withtemplates)
 ]
