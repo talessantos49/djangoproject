@@ -16,3 +16,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+class Producao(models.Model):
+    nome : models.CharField(max_length=50)
+    setor : models.CharField(max_length=50)
+    maquina : models.CharField(max_length=50)
+    turno : models.CharField(max_length=50)
+    horario : models.TimeField(auto_now_add=True)
